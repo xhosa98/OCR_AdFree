@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
+    margin: 20px;
+    text-align: center;
+    background-color: #fafafa;
+    color: #222; 
+}
+
+#result {
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    max-width: 100%;
+    box-sizing: content-box;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
+    text-align: left;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
+    cursor: pointer;
+}
