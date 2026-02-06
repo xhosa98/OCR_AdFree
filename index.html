@@ -12,13 +12,14 @@
 <body>
     <h1>Welcome to (an) Ad Free OCR :D</h1>
     <p>This is a simple OCR application without ads.</p>
-    <form action="/upload" id="uploadForm" method="post" enctype="multipart/form-data">
-        <pre id="upload"><input type="file" id="fileInput" name="uploadedFile" accept=".jpg, .png, .pdf, .tiff, .bmp, .jpeg" required></pre>
+    <form id="uploadForm">
+        <input type="file" id="fileInput" accept=".jpg, .png, .pdf, .tiff, .bmp, .jpeg" required>
         <button type="submit">Upload and Process</button>
     </form>
     <progress id="progressBar" value="0" max="100" hidden></progress>
     <div id="progressText" aria-live="polite" style="color:var(--muted);font-size:14px"></div>
     <pre id="result">Here, the extracted text will appear after processing.</pre>
+    <button type="button" id="saveButton" hidden>Save as txt file</button>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/tesseract.js@2/dist/tesseract.min.js"></script>
 <script src="script.js"></script>
