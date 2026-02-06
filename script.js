@@ -1,5 +1,3 @@
-document.getElementById('saveButton').hidden = true;
-
 const progressBar = document.getElementById('progressBar');
 const progressText = document.getElementById('progressText');
 document.getElementById('uploadForm').onsubmit = async function (event) {
