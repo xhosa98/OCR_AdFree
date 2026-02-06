@@ -1,30 +1,27 @@
-body {
-    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
-    margin: 20px;
-    text-align: center;
-    background-color: #fafafa;
-    color: #222; 
+:root{
+  --bg:#f6f8fb; --card:#ffffff; --accent:#649af1; --muted:#6b7280;
 }
-
-#result {
-    white-space: pre-wrap;
-    background-color: #f4f4f4;
-    padding: 10px;
-    border: 1px solid #ddd;
-    margin-top: 20px;
-    max-width: 100%;
-    box-sizing: content-box;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
-    text-align: left;
+*{box-sizing:border-box}
+body{
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg,#f7fbff 0%,var(--bg) 100%);
+  margin:0; color:#111; -webkit-font-smoothing:antialiased;
 }
-
-button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    font-size: 16px;
-    font-family: Arial, Helvetica, 'Times New Roman', Times, serif, sans-serif;
-    cursor: pointer;
+.container{
+  max-width:900px; margin:40px auto; padding:24px;
 }
+.card{
+  background:var(--card); border-radius:12px; box-shadow:0 6px 20px rgba(134, 165, 228, 0.678);
+  padding:28px;
+}
+h1{margin:0 0 8px; font-weight:600}
+form{display:flex; gap:12px; align-items:center; flex-wrap:wrap}
+input[type=file]{padding:8px}
+button{
+  background:var(--accent); color:#fff; border:none; padding:10px 16px; border-radius:8px; cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s;
+}
+button:hover{transform:translateY(-2px); box-shadow:0 6px 18px rgba(0, 90, 235, 0.815)}
+#upload{white-space:pre-wrap; background:#b7b8bd; padding:12px; border-radius:8px; margin-top:14px}
+#result{white-space:pre-wrap; background:#b7b8bd; padding:12px; border-radius:8px; margin-top:14px}
+progress{width:100%; height:12px; border-radius:8px; overflow:hidden}
